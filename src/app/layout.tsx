@@ -28,6 +28,10 @@ const ooohBaby = Oooh_Baby({
 export const metadata: Metadata = {
   title: "More Coffee & Space",
   description: "Company Profile for More Coffee & Space",
+  icons: {
+    icon: "/More Logo.png",
+    apple: "/More Logo.png",
+  },
 };
 
 export default function RootLayout({
