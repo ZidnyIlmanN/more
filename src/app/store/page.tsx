@@ -50,10 +50,10 @@ export default function StorePage() {
     <main className="w-full flex flex-col min-h-screen">
       {/* Hero Section */}
       <section className="hero-store relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center justify-center overflow-hidden bg-[#111]">
-        {/* Background image placeholder */}
-        <div className="absolute inset-0 z-0 opacity-40">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0 opacity-50">
           <img 
-            src="https://placehold.co/1920x1080/111111/444444?text=MORE+Store+Hero" 
+            src="/Store/hero-store.png" 
             alt="Store Hero Background" 
             className="w-full h-full object-cover"
           />

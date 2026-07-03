@@ -14,7 +14,7 @@ export default function ContactPage() {
           />
         </div>
         
-        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 text-center mt-10 md:mt-20">
+        <div className="relative z-10 w-full max-w-[1280px] mx-auto px-4 text-center mt-24 md:mt-20">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-tighter mb-4 leading-none" style={{ fontFamily: 'Onest, Arial, sans-serif' }}>
             CONTACT MORE
           </h1>

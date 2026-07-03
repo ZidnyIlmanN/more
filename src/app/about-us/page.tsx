@@ -77,14 +77,14 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="gallery-aboutus w-full pt-20 md:pt-28 pb-16 md:pb-24">
+      <section className="gallery-aboutus gallery-custom-spacing w-full pb-32 md:pb-24">
         <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6">
           {/* Header */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 gap-4">
-            <div className="text-white text-xl md:text-2xl font-medium md:mb-4" style={{ fontFamily: 'Onest, Arial, sans-serif' }}>
+          <div className="flex flex-row justify-between items-end mb-10 md:mb-16 gap-4">
+            <div className="text-white text-[14px] md:text-2xl font-medium mb-1 md:mb-4" style={{ fontFamily: 'Onest, Arial, sans-serif' }}>
               Gallery of More
             </div>
-            <h1 className="heading-28 text-white uppercase" style={{ fontFamily: 'Onest, Arial, sans-serif', margin: 0 }}>
+            <h1 className="heading-28 text-white uppercase text-right" style={{ fontFamily: 'Onest, Arial, sans-serif', margin: 0 }}>
               ON THE SPOT
             </h1>
           </div>
@@ -126,7 +126,7 @@ export default function AboutUs() {
             </Swiper>
 
             {/* Custom Navigation Buttons */}
-            <div className="flex justify-end gap-6 mt-12 mb-20 pr-4 md:pr-0">
+            <div className="flex justify-end gap-6 pr-4 md:pr-0" style={{ marginTop: '48px', marginBottom: '120px' }}>
               <button className="swiper-button-prev-custom w-16 h-16 md:w-20 md:h-20 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform cursor-pointer shadow-lg group focus:outline-none z-10">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF642E" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="group-hover:-translate-x-1 transition-transform">
                   <polyline points="15 18 9 12 15 6"></polyline>
@@ -142,7 +142,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="rt-home-one-testimonial rt-component-section-4">
+      <section className="rt-home-one-testimonial rt-component-section-4" style={{ marginTop: '180px', paddingTop: '40px' }}>
         <div className="rt-home-one-testimonial-wrapper">
           <div className="rt-home-one-testimonial-heading">
             <h2 className="rt-change-padding-2">Talk with</h2>

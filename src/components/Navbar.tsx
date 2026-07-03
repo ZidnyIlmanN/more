@@ -51,8 +51,12 @@ export default function Navbar() {
           <Link href="/menu" className={`nav-link-button w-nav-link ${pathname === '/menu' ? 'nav-link-active' : ''}`}>Menu</Link>
           <Link href="/contact" className={`nav-link-button w-nav-link ${pathname === '/contact' ? 'nav-link-active' : ''}`}>Contact</Link>
         </nav>
-        <div className={`menu-button w-nav-button ${isMenuOpen ? 'w--open' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <div className="icon w-icon-nav-menu"></div>
+        <div 
+          className={`menu-button w-nav-button ${isMenuOpen ? 'w--open' : ''}`} 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          style={(pathname === '/about-us' && !isScrolled) ? { color: 'black', WebkitTextFillColor: 'black' } : {}}
+        >
+          <div className="icon w-icon-nav-menu" style={(pathname === '/about-us' && !isScrolled) ? { color: 'black', WebkitTextFillColor: 'black' } : {}}></div>
         </div>
       </div>
     </div>

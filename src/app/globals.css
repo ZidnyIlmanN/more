@@ -788,10 +788,14 @@ body {
 }
 
 /* About Us Specific Transparent State (Initial) */
-.nav-menu.nav-transparent.is-about-us .nav-link-button,
-.nav-menu.nav-transparent.is-about-us .icon {
+.nav-menu.nav-transparent.is-about-us .nav-link-button {
   color: #ff642e !important;
   /* Orange color */
+}
+
+.nav-menu.nav-transparent.is-about-us .icon {
+  color: #000000 !important;
+  /* Black color */
 }
 
 .nav-menu.nav-transparent.is-about-us .logo-brand img {
@@ -1858,6 +1862,11 @@ h6,
     padding: 40px 20px !important;
   }
 
+  .profile-content-aboutus {
+    position: relative !important;
+    height: auto !important;
+  }
+
   .profil-content-grid {
     position: relative !important;
     height: auto !important;
@@ -1866,38 +1875,74 @@ h6,
     gap: 30px !important;
   }
 
-  .profile-content-aboutus .content-grid {
+  /* First row: ABOUT MORE and how about? */
+  .profile-content-aboutus .content-grid:nth-child(1) {
     display: flex !important;
-    flex-direction: column !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-end !important;
     width: 100% !important;
-    align-items: center !important;
-    text-align: center !important;
+    margin-bottom: 20px !important;
   }
 
   .profile-heading {
-    flex-direction: row !important;
-    justify-content: center !important;
-    gap: 8px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0px !important;
   }
 
   .heading-text1, .heading-text2 {
-    font-size: 42px !important;
+    font-size: 56px !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    text-align: left !important;
+  }
+
+  .profile-decoration {
+    margin-bottom: 8px !important;
+  }
+  
+  .text-decoration {
+    font-size: 14px !important;
+  }
+
+  /* Second row: Text (Left) and Image (Right) */
+  .profile-content-aboutus .content-grid:nth-child(2) {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px !important;
+    width: 100% !important;
+    align-items: flex-start !important;
+  }
+
+  .div-block-54 {
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .paragraph-3 {
-    text-align: center !important;
-    margin-bottom: 20px !important;
+    text-align: left !important;
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .div-block-55 {
+    display: flex !important;
+    justify-content: flex-end !important;
   }
 
   .profile-aboutus .image-29 {
     width: 100% !important;
-    max-width: 300px !important;
+    height: auto !important;
     border-radius: 20px !important;
+    object-fit: cover !important;
   }
 
   /* Talk with Owner mobile spacing */
   .rt-home-one-testimonial.rt-component-section-4 {
-    margin-top: 100px !important;
+    margin-top: 180px !important;
     margin-bottom: 40px !important;
   }
 
@@ -2455,5 +2500,16 @@ h6,
 
   .nav-menu-button .nav-link-button.w-nav-link:hover {
     color: #ff642e !important;
+  }
+}
+
+/* Custom spacing for Gallery to bypass Tailwind cache issues and ensure responsiveness */
+.gallery-custom-spacing {
+  padding-top: 60px !important; /* Mobile */
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-custom-spacing {
+    padding-top: 200px !important; /* PC/Desktop */
   }
 }
